@@ -13,5 +13,4 @@ jobs:
 
       - name: Echo HPC info
         run: |
-          echo "Hej fra HPC"
-          uname -a
+          srun hostname
