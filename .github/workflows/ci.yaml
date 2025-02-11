@@ -13,4 +13,4 @@ jobs:
 
       - name: Echo HPC info
         run: |
-          srun hostname
+          sbatch --job-name=github-runner --wrap="srun hostname"
