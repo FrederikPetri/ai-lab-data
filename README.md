@@ -1,2 +1,2 @@
 # ai-lab-data
-Test af runner til AILAB
+Test af runner til AI-LAB
