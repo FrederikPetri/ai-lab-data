@@ -1,0 +1,17 @@
+name: HPC test job
+on:
+  push:
+    branches:
+      - main
+jobs:
+  test-hpc:
+    runs-on: self-hosted
+    # ELLER runs-on: [self-hosted, HPC] hvis du brugte label HPC
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v3
+
+      - name: Echo HPC info
+        run: |
+          echo "Hej fra HPC"
+          uname -a
