@@ -11,4 +11,4 @@ jobs:
         uses: actions/checkout@v3
       - name: AI-LAB hostname info
         run: |
-          sbatch --output=hostname_output.txt --wrap="hostname"
+          sbatch --output=hostname_output_2.txt --wrap="hostname"
